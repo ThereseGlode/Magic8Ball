@@ -12,12 +12,16 @@
     <script type="module" src="script.js"></script>
   </head>
   <body>
-    <nav>
-      <a href="/" aria-current="page">Home</a>
-      <a href="/page2.html">Other page</a>
-    </nav>
-    <main>
-      <h1>Home page</h1>
-    </main>
+    <div class="container">
+      <h1>Magic 8 Ball 🎱</h1>
+      <input type="text" id="questionInput" placeholder="Still et ja/nei-spørsmål" />
+      <button onclick="shakeBall()">Spør kula</button>
+      <div id="result">
+        <p><strong>Spørsmål:</strong> <span id="questionText"></span></p>
+        <p><strong>Svar:</strong> <span id="answerText"></span></p>
+      </div>
+    </div>
+  
+    <script src="script.js"></script>
   </body>
 </html>
